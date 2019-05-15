@@ -1,0 +1,325 @@
+body{
+	overflow-x: hidden;
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(image/bg1.jpg);
+	width: 100%;
+	height: 100%
+	background-size:cover;
+	background-position: center center;
+	position: relative;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+.mapouter{
+	position: relative;
+	padding-bottom: 66%;
+	height: 0;
+}
+
+.mapouter iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+}
+
+/*--Navbar--*/
+.navbar{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: .8rem;
+	letter-spacing: .1rem;
+    
+    border-bottom:3px solid #499986;
+    overflow-x: hidden;
+ }
+	.nav-link{
+         display:inline-block;
+     }
+
+     .navbar-brand img{
+height: 2rem;
+     }
+
+.navbar-nav li{
+	padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+color: white;
+padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: red;
+	box-shadow: 0 7px 15px rgba(0,0,0,4);
+}
+
+/*--slider--*/
+.carousel-item {
+	height: 98vh;
+}
+
+.carousel-caption{
+	position: absolute;
+	top: 55%;
+	text-transform:uppercase;
+	transform: translateY(-50%);
+
+}
+
+.carousel-caption h2{
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	padding-bottom: 0.2rem;
+}
+
+.carousel-caption h3{
+	color:salmon;
+	font-size: 2rem;
+	text-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
+	padding-bottom: 1.6rem;
+	font-family: cursive;
+	font-weight: 500;
+}
+
+.btn-lg{
+	border-radius: 0;
+	border-width: medium;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 1025px){
+	.carousel-item {
+	height: auto;
+}
+	.carousel-caption h2{
+		font-size: 3em;
+		letter-spacing: .15rem;
+		padding-bottom: .10rem;
+	}
+
+	.carousel-caption h3{
+		font-size: 3em;
+		padding-bottom: 0.5em;
+
+	}
+
+	.carousel-caption{
+	position: absolute;
+	top: 60%;
+	text-transform:uppercase;
+
+}
+
+	.btn-lg{
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 770px){
+	.carousel-item {
+	height: auto;
+}
+	.carousel-caption h2{
+		font-size: 2em;
+		letter-spacing: .15rem;
+		padding-bottom: .10rem;
+	}
+
+	.carousel-caption h3{
+		font-size: 2em;
+		padding-bottom: 0.5em;
+
+	}
+
+	.carousel-caption{
+	position: absolute;
+	top: 60%;
+	text-transform:uppercase;
+
+}
+
+	.btn-lg{
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 600px){
+	.carousel-item {
+	height: auto;
+				}
+
+	.carousel-caption h2{
+		font-size: 1em;
+		letter-spacing: .15rem;
+		padding-bottom: .10rem;
+	}
+
+	.carousel-caption h3{
+		font-size: 0.8em;
+
+	}
+
+	.carousel-caption{
+	position: absolute;
+	top: 60%;
+	text-transform:uppercase;
+
+}
+
+	.btn-lg{
+		font-size: 0.4em;
+	}
+}
+
+
+@media (max-width: 440px){
+	.carousel-item {
+	height: auto;
+				}
+
+	.carousel-caption h2{
+		font-size: 1em;
+		letter-spacing: .15rem;
+		padding-bottom: .10rem;
+	}
+
+	.carousel-caption h3{
+		font-size: 0.8em;
+
+	}
+
+	.carousel-caption{
+	position: absolute;
+	top: 50%;
+	text-transform:uppercase;
+
+}
+
+	.btn-lg{
+		font-size: 0.4em;
+	}
+}
+
+	.footer{
+		background-color:#499986;
+		color: white;
+		padding: 2rem 0.3rem;
+		font-weight: bold;
+		border-top:20px solid #499986;
+		/*border-top:2px solid lightgreen;*/
+	}
+
+	.footer a{
+		color:black;
+	}
+
+	hr.socket{
+		border-top: .2rem solid green;
+		width: 30%;
+	}
+	
+	
+
+	.box{
+		-webkit-transition:all 0.5s ease;
+	}
+
+	.box:hover{
+		transform: scale(1.2);
+	}
+
+	.log{
+		border:3px solid darkred;
+		padding:40px 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: rgba(60, 127, 24,0.4)!important;
+	}
+
+	.card-block{
+		background-color: lightblue;
+	}
+
+	.card-header:hover{
+		color: red;
+		font-weight: bold;
+	}
+	.card-header{
+		background-color: rgb(15, 224, 168);
+		border:2px solid darkblue;
+		text-align: center;
+	}
+
+	.img-thumbnail{
+		margin-bottom: 40px;
+	}
+
+ 	#more {
+ 		display: none;
+ 	}
+
+ 	#more1 {
+ 		display: none;
+ 	}
+
+
+ 	#more2 {
+ 		display: none;
+ 	}
+
+ 	#more3 {
+ 		display: none;
+ 	}
+
+ 	#myBtn{
+ 		color: blue;
+ 		font-weight: bold;
+ 	}
+
+ 	#myBtn:hover{
+ 		color: darkred;
+ 		font-weight: bold;
+ 	}
+
+ 	#myBtn1{
+ 		color: blue;
+ 		font-weight: bold;
+ 	}
+
+ 	#myBtn1:hover{
+ 		color: darkred;
+ 		font-weight: bold;
+ 	}
+
+	#myBtn2{
+ 		color: blue;
+ 		font-weight: bold;
+ 	}
+
+ 	#myBtn2:hover{
+ 		color: darkred;
+ 		font-weight: bold;
+ 	}
+
+	#myBtn3{
+ 		color: blue;
+ 		font-weight: bold;
+ 	}
+
+ 	#myBtn3:hover{
+ 		color: darkred;
+ 		font-weight: bold;
+ 	}

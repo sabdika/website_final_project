@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>College Website</title>
+	<meta charset="utf-8">
+	<meta name="author" content="your name"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web">
+	<link rel="stylesheet" href="jquery-ui-1.12.1">
+
+</head>
+	<body data-spy="scroll" data-target="#collapsenavbar" onload="clockStart()">
+		<!--Start home section-->
+		<div id="contact">
+			<div class="row">
+			<div class="col-xl-12">
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+					<a class="navbar-brand"><img src="image/logo2.png" alt="logo" class="img-fluid"></a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!--navigation menu-->
+					<div class="collapse navbar-collapse" id="collapsenavbar">
+						
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>	
+							</li>
+
+							<li class="nav-item">
+							<a href="about.html" class="nav-link">About</a>	
+							</li>
+
+
+							<li class="nav-item">
+							<a href="team.html" class="nav-link">Team</a>	
+							</li>
+
+							<li class="nav-item">
+							<a href="gallery.html" class="nav-link" >Gallery</a>	
+							</li>
+
+							<li class="nav-item">
+							<a href="contact.html" class="nav-link active">Contact</a>	
+							</li>
+
+						</ul>
+					</div>
+			</nav>
+		</div>
+	</div>
+
+
+			<!--Clock Start-->
+			<div class="row">
+			<div class="col-xl-12">
+			<div id="clock" style="margin-top: 80px; color:violet; margin-left: 15px; font-weight: bold;">
+			<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>
+			<span id="ampm">ampm</span>
+			</div>
+			<div id="date" style="color: violet; margin-left: 15px; font-weight: bold;">
+
+			</div>
+			</div>
+			</div>
+			<!--Clock End-->
+			<div class="container">
+			<div class="row">
+          <div class="col-xl-12">
+            <div class="section-headline text-center">
+              <h2 style="color: white;">Our Contact Form</h2>
+              <hr class="socket text-center">
+            </div>
+          </div>
+        </div>
+       
+		<div class="row">
+			
+			<div class="col-md-5">
+				<form class="log" name="formvalid" onsubmit="return(validateForm())">
+					<h1 style="color: white; text-align: center;">Login Form</h1>
+					<hr class="socket text-center">
+				<div class="form-group">
+					<label style="color: rgb(226, 205, 43);">First Name:</label>
+					<input type="text" class="form-control" id="Fname" placeholder="Enter your first name">
+				</div>
+
+				<div class="form-group">
+					<label style="color:rgb(226, 205, 43); ;">Last Name:</label>
+					<input type="text" class="form-control" id="Lname" placeholder="Enter your last name">
+				</div>
+
+				<div class="form-group">
+					<label style="color:rgb(226, 205, 43);">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter your email address">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				
+				<div class="form-group">
+				<label style="color: rgb(226, 205, 43);">Feield Of Interest:</label>
+					<div class="form-control">
+						<select name="shift">
+							<option selected="selected">Science</option>
+							<option>Management</option>
+							<option>Education</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label style="color: rgb(226, 205, 43);">Age:</label>
+					<input type="number" class="form-control" placeholder="Enter your age" min="15" max="20" id="ageName">
+					<small id="ageHelp" class="form-text text-muted">Age from 15 to 20 is only valid</small>
+				</div>
+				
+				<div class="form-group">
+					<label style="color: rgb(226, 205, 43);">Gender:</label>
+					<div class="form-control">
+						<select name="shift">
+							<option selected="selected">Male</option>
+							<option>Female</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label style="color: rgb(226, 205, 43);">Shift:</label>
+					<div class="form-control">
+						<select name="shift">
+							<option selected="selected">Day</option>
+							<option>Morning</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label style="color: rgb(226, 205, 43);">Message and Queries:</label>
+					<textarea cols="12" rows="5" class="form-control" id="message" placeholder="Enter your msg or queries"></textarea>
+					
+					    <small id="messageHelp" class="form-text text-muted">We will respond to your message with in a day</small>
+				</div>
+				
+				<button type="submit" class="btn btn-success center-block">Submit</button>
+				<button type="reset" class="btn btn-danger center-block">Reset</button>
+				
+			</form>
+			</div>
+			<div class="col-md-2"></div>
+
+	<div class="col-md-5">
+          <!-- Start contact icon column -->
+          
+            <div class="contact-icon text-center">
+            	<h3 style="color:yellow; margin-top: 15px;">Call:</h3>
+                <h5 style="color: white;">
+                  01-5132076, 9860343000<br>
+                  ghimiresabdika343@gmail.com<br>
+                  Sunday-Friday (9am-5pm)
+                </h5>
+              </div>
+          
+         
+          
+          <!-- Start contact icon column -->
+          
+            <div class="contact-icon text-center">
+            	<h3 style="color:yellow; margin-top: 15px;">Location:</h3>
+                <h5 style="color: white;">
+                   Balkumari Street<br>
+                  Lalitpur, Nepal
+                </h5>
+            </div>
+     
+
+      
+            <div class="contact-icon text-center">
+            	<h3 style="color:yellow; margin-top: 15px;">College Network:</h3>
+                <h5 style="color: white; margin-bottom: 50px;">
+                  Lalitpur Int'l HSS <br>Ritzzz Hospitality Management College<br>Lalitpur School and Montessori<br>Lalitpur College of Technology<br>(TSLC &amp; sub-overseer)<br>
+                  
+                </h5>
+            </div>
+
+            <div><img src="image/contact2.png" alt="contact" class="img-fluid rounded-circle">
+            	<p style="background-color: lightblue; color: darkred; font-family: cursive; margin-top: 20px; padding: 20px;">Hello, We are here to help you. Thank you for visiting our page. Admission Forms are limited please grab the oppornunity.Visit our college for further more information. We are available from Sunday to Friday from 10am to 5pm.
+            	<br> Thank you:)</p>
+            </div>
+
+</div>
+	</div>
+
+	</div>
+	
+	</div>
+		<!--footer-->
+		<div class="footer">
+		<div class="row justify-content-center">
+			<div class="col-md-5 text-center">
+				<h3>Lalitpur Int'l College</h3>
+				<p>At our core is to provide quality education to achieve the desire and goals that each and every student poses in their life.</p>
+				<strong>Contant Information</strong>
+				<p>01-5132076<br>ghimiresabdika343@gmail.com</p>
+
+				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<hr class="socket text-center">
+		<div class="row justify-content-center">
+			<div class="col-xl-12 text-center">
+				&copy; 2019,Lalitpur Int'l College, All right Reserved.
+			</div>
+		</div>
+		</div>
+		
+		<script>
+			 function validateForm() {
+         
+         	if(document.getElementById("Fname").value==""){
+         		document.getElementById("Fname").focus();
+         		alert("Please Enter Your First Name!!");
+         		return false;
+         	}
+         		else if(document.getElementById("Lname").value==""){
+         			document.getElementById("Lname").focus();
+         			alert("Please Enter Your Last Name!!");
+         			return false;
+         		}
+         		else if(document.getElementById("email").value==""){
+         			document.getElementById("email").focus();
+         			alert("Please Enter Your Email address!!");
+         			return false;
+         		}
+         		
+         		else if(document.getElementById("ageName").value==""){
+         			document.getElementById("ageName").focus();
+         			alert("Please Enter Your age!!");
+         			return false;
+         		}
+         		else if(document.getElementById("bDate").value==""){
+         			document.getElementById("bDate").focus();
+         			alert("Please Enter Your birthdate!!");
+         			return false;
+         		}
+
+         		else if(document.getElementById("message").value==""){
+         			document.getElementById("message").focus();
+         			alert("Please Enter Your Message/Suggestion/Queries!!");
+         			return false;
+         		}
+         		else{
+         		alert("Thank you for the feedback!!");
+         		return false;
+         		}
+         	return true;	
+         	}
+		</script>
+
+					<script>
+	var timerId//current timer if started
+	function clockStart(){
+		if(timerId) return
+			timerId=setInterval(update, 1000)
+			update()//(*)
+	}
+	function update(){
+		var date=new Date()
+		var hours=date.getHours()
+		if(hours<10) hours='0'+hours
+			document.getElementById('hour').innerHTML=hours
+
+		var minutes=date.getMinutes()
+		if(minutes<10) minutes='0'+minutes
+			document.getElementById('min').innerHTML=minutes
+
+		var seconds=date.getSeconds()
+		if(seconds<10) seconds='0'+seconds
+			document.getElementById('sec').innerHTML=seconds
+
+		if (hours<=11) 
+			document.getElementById('ampm').innerHTML="AM";
+		else
+			document.getElementById('ampm').innerHTML="PM";
+	}
+		cd=new Date();
+		days=cd.getDay();
+		date=cd.getDate();
+		month=cd.getMonth();
+		year=cd.getFullYear();
+
+		if (days==0) days="Sunday";
+		else if(days==1) days="Monday";
+		else if(days==2) days="Tuesday";
+		else if(days==3) days="Wednesday";
+		else if(days==4) days="Thrusday";
+		else if(days==5) days="Friday";
+		else if(days==6) days="Saturday";
+		
+		if (month==0) month="Janaury";
+		else if(month==1) month="February";
+		else if (month==2) month="March";
+		else if (month==3) month="April";
+		else if (month==4) month="May";
+		else if (month==5) month="June";
+		else if (month==6) month="July";
+		else if (month==7) month="August";
+		else if (month==8) month="September";
+		else if (month==9) month="October";
+		else if (month==10) month="November";
+		else if (month==11) month="December";
+		document.getElementById('date').innerHTML=days+","+date+" "+month+" "+year+" ";
+</script>
+				<script src ="js/jquery-.js"></script>
+				<script src ="js/bootstrap.min.js"></script>
+				 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 				 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</body>
+	</html>
